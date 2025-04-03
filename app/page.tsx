@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 export default function Home() {
@@ -13,7 +14,15 @@ export default function Home() {
       </div>
 
       <div>
-        <div>Key Benefits</div>
+        <div>Dimension of Yoga</div>
+        <div>The many forms of the art strive to promote one&apos;s overall wellbeing based their own values.</div>
+        <div>Choose Your Path</div>
+        <div>
+          <Link href={'/physical'}>Physical</Link>
+          <Link href={'/anatomical'}>Anatomical</Link>
+          <Link href={'/spiritual'}>Spiritual</Link>
+          <Link href={'/emotional'}>Emotional</Link>
+        </div>  
       </div>
     </div>
   );
