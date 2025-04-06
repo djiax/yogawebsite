@@ -1,17 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const sourceSerif = Source_Serif_4({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'], // Add the weights you need
+  display: 'swap',
+  variable: '--font-source-serif', // Optional: for CSS variable access
 });
 
 export const metadata: Metadata = {
@@ -25,9 +22,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={sourceSerif.className}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className='bg-[#E0958B] text-[#630185]'
       >
         {children}
         <Analytics />
