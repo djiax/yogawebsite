@@ -8,7 +8,7 @@ const sourceSerif = Source_Serif_4({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'], // Add the weights you need
   display: 'swap',
-  variable: '--font-source-serif', // Optional: for CSS variable access
+  variable: '--font-source-serif', // Optional: for CSS variable access text-[#630185]
 });
 
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={sourceSerif.className}>
       <body
-        className='bg-[#E0958B] text-[#630185]'
+        className='bg-gradient-to-l from-[#ffdde1] to-[#ee9ca7] text-[#630185]'
       >
         {children}
         <Analytics />

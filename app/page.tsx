@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
     <div className='flex flex-col min-h-[77vh] justify-center items-center px-55'>
-      <div className='text-5xl '>Ascension in Body</div>
+      <div className='text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#f45899] to-[#654ea3]'>Ascension in Body</div>
       <div className='border-b mt-5'>A Guide to Unlocking Your Essence</div>
       </div>
 
